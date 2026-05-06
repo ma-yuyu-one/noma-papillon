@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://papillon-noma-shonan.netlify.app/sitemap.xml
+
