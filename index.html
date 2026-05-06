@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-900BNED2EW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-900BNED2EW');
+</script>
+
+<title>NOMA | 湘南パピヨン ノマの日々</title>
+<meta name="description" content="ビビりなのに、冒険家。湘南で暮らすパピヨン・ノマの日々を記録するブランドサイト。海と風と小さなしあわせを見つける毎日を、写真と動画で発信しています。">
+<meta name="keywords" content="湘南,パピヨン,ノマ,犬,ブランドサイト,湘南の犬,パピヨンの日常">
+<meta name="author" content="NOMA DIARY">
+
+<link rel="canonical" href="https://papillon-noma-shonan.netlify.app/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NOMA DIARY">
+<meta property="og:title" content="NOMA | 湘南パピヨン ノマの日々">
+<meta property="og:description" content="ビビりなのに、冒険家。湘南で暮らすパピヨン・ノマの日々を記録するブランドサイト。">
+<meta property="og:url" content="https://papillon-noma-shonan.netlify.app/">
+<meta property="og:image" content="https://papillon-noma-shonan.netlify.app/images/ogp.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="湘南パピヨン ノマ - ビビりなのに、冒険家。">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NOMA | 湘南パピヨン ノマの日々">
+<meta name="twitter:description" content="ビビりなのに、冒険家。湘南で暮らすパピヨン・ノマの日々。">
+<meta name="twitter:image" content="https://papillon-noma-shonan.netlify.app/images/ogp.jpg">
+
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-photo-32.png">
+<link rel="icon" type="image/png" sizes="180x180" href="images/favicon-photo-180.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon-photo-180.png">
+
+<meta name="theme-color" content="#0e3a55">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "NOMA | 湘南パピヨン ノマの日々",
+  "url": "https://papillon-noma-shonan.netlify.app/",
+  "description": "ビビりなのに、冒険家。湘南で暮らすパピヨン・ノマの日々を記録するブランドサイト。",
+  "inLanguage": "ja-JP"
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a2838;
+    --ink-soft: #4a5568;
+    --paper: #f6f1e7;
+    --paper-warm: #efe7d6;
+    --sea: #4a8fa8;
+    --sea-deep: #1e5a7a;
+    --sunset: #e08940;
+    --white: #ffffff;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    color: var(--ink);
+    line-height: 1.8;
+    overflow-x: hidden;
+  }
+
+  img { display: block; max-width: 100%; }
+
+  /* ナビゲーション */
+  .nav {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 20px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: rgba(246, 241, 231, 0);
+    transition: background 0.4s, backdrop-filter 0.4s;
+    backdrop-filter: blur(0);
+  }
+
+  .nav.scrolled {
+    background: rgba(246, 241, 231, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(26, 40, 56, 0.08);
+  }
+
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    color: var(--white);
+    transition: color 0.4s;
+  }
+
+  .nav.scrolled .nav-logo { color: var(--ink); }
+
+  .nav-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.4s, opacity 0.3s;
+  }
+
+  .nav.scrolled .nav-links a { color: var(--ink); }
+  .nav-links a:hover { opacity: 0.6; }
+
+  /* ナビYouTubeボタン */
+  .nav-youtube {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: #ff0000;
+    color: var(--white) !important;
+    border-radius: 20px;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.1em !important;
+    text-transform: none !important;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .nav-youtube:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255,0,0,0.3);
+    opacity: 1 !important;
+  }
+
+  .nav-youtube svg { width: 14px; height: 14px; fill: var(--white); }
+
+  .nav.scrolled .nav-youtube { color: var(--white) !important; }
+
+  /* ヒーローセクション */
+  .hero {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    overflow: hidden;
+  }
+
+  .hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    animation: slowZoom 20s ease-out forwards;
+  }
+
+  @keyframes slowZoom {
+    from { transform: scale(1.15); }
+    to { transform: scale(1); }
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg,
+        rgba(26,40,56,0.35) 0%,
+        rgba(26,40,56,0.1) 35%,
+        rgba(26,40,56,0) 60%,
+        rgba(26,40,56,0.15) 100%);
+  }
+
+  .hero-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: right;
+    padding: 0 8%;
+    padding-top: 14%;
+    color: var(--white);
+  }
+
+  .hero-tag {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 16px;
+    opacity: 0;
+    animation: fadeUp 1.2s 0.4s ease both;
+  }
+
+  .hero-title {
+    font-family: 'Shippori Mincho', serif;
+    font-size: clamp(48px, 9vw, 120px);
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeUp 1.4s 0.6s ease both;
+  }
+
+  .hero-title .small {
+    display: block;
+    font-size: 0.35em;
+    font-weight: 400;
+    letter-spacing: 0.4em;
+    margin-bottom: 0.3em;
+    opacity: 0.9;
+  }
+
+  .hero-desc {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    max-width: 500px;
+    opacity: 0;
+    animation: fadeUp 1.4s 0.9s ease both;
+  }
+
+  /* ヒーロー内YouTubeピル */
+  .hero-yt-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 24px;
+    padding: 10px 20px 10px 14px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 40px;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    opacity: 0;
+    animation: fadeUp 1.4s 1.2s ease both;
+    transition: background 0.3s, transform 0.3s, border-color 0.3s;
+  }
+
+  .hero-yt-pill:hover {
+    background: rgba(255,255,255,0.2);
+    border-color: rgba(255,255,255,0.4);
+    transform: translateY(-2px);
+  }
+
+  .hero-yt-pill .yt-icon {
+    width: 28px;
+    height: 20px;
+    background: #ff0000;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-yt-pill .yt-icon svg { width: 12px; height: 12px; fill: var(--white); margin-left: 2px; }
+
+  .hero-yt-pill .arrow { font-size: 14px; opacity: 0.7; }
+
+  .hero-scroll {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    color: var(--white);
+    opacity: 0;
+    animation: fadeUp 1s 1.4s ease both, bounce 2s 2s ease-in-out infinite;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, -8px); }
+  }
+
+  /* セクション共通 */
+  section { padding: 120px 8%; }
+
+  .section-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--sea);
+    margin-bottom: 12px;
+    letter-spacing: 0.15em;
+  }
+
+  .section-title {
+    font-family: 'Shippori Mincho', serif;
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 40px;
+    letter-spacing: 0.02em;
+  }
+
+  /* イントロセクション */
+  .intro {
+    background: var(--paper);
+    position: relative;
+  }
+
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .intro-text .section-title { margin-bottom: 32px; }
+
+  .intro-text p {
+    font-size: 16px;
+    line-height: 2;
+    color: var(--ink-soft);
+    margin-bottom: 24px;
+  }
+
+  .intro-meta {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px 32px;
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(26,40,56,0.1);
+    font-size: 14px;
+  }
+
+  .intro-meta dt {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--sea);
+    letter-spacing: 0.1em;
+  }
+
+  .intro-meta dd {
+    font-weight: 500;
+    color: var(--ink);
+  }
+
+  .intro-img-wrap {
+    position: relative;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+
+  .intro-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .intro-caption {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--sea);
+    letter-spacing: 0.2em;
+  }
+
+  /* ギャラリーセクション */
+  .gallery {
+    background: var(--paper-warm);
+    padding: 140px 5%;
+  }
+
+  .gallery-header {
+    text-align: center;
+    margin-bottom: 80px;
+    padding: 0 3%;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 120px;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+  }
+
+  .gallery-item:hover img { transform: scale(1.05); }
+
+  .gallery-item::after {
+    content: attr(data-caption);
+    position: absolute;
+    bottom: 16px;
+    left: 20px;
+    color: var(--white);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    opacity: 0;
+    transition: opacity 0.4s;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+
+  .gallery-item:hover::after { opacity: 1; }
+
+  /* ギャラリー配置 */
+  .g1 { grid-column: span 5; grid-row: span 4; }
+  .g2 { grid-column: span 4; grid-row: span 3; }
+  .g3 { grid-column: span 3; grid-row: span 3; }
+  .g4 { grid-column: span 4; grid-row: span 3; }
+  .g5 { grid-column: span 3; grid-row: span 4; }
+  .g6 { grid-column: span 5; grid-row: span 3; }
+  .g7 { grid-column: span 4; grid-row: span 3; }
+  .g8 { grid-column: span 4; grid-row: span 3; }
+  .g9 { grid-column: span 4; grid-row: span 5; }
+  .g10 { grid-column: span 4; grid-row: span 5; }
+  .g11 { grid-column: span 4; grid-row: span 4; }
+
+  /* クオートセクション */
+  .quote {
+    background: var(--paper);
+    text-align: center;
+    padding: 140px 8%;
+  }
+
+  .quote-text {
+    font-family: 'Shippori Mincho', serif;
+    font-size: clamp(24px, 3vw, 36px);
+    line-height: 1.8;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 0 auto 32px;
+    color: var(--ink);
+  }
+
+  .quote-mark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 120px;
+    line-height: 0.5;
+    color: var(--sea);
+    opacity: 0.3;
+    margin-bottom: 20px;
+  }
+
+  .quote-author {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 16px;
+    letter-spacing: 0.3em;
+    color: var(--sea);
+  }
+
+  /* フォローセクション */
+  .follow {
+    background: linear-gradient(180deg, #1e5a7a 0%, #0e3a55 100%);
+    color: var(--white);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 140px 8%;
+  }
+
+  .follow::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -10%;
+    width: 120%;
+    height: 200%;
+    background: radial-gradient(ellipse at center, rgba(255,255,255,0.08) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .follow-header { margin-bottom: 50px; position: relative; }
+
+  .follow .section-label { color: rgba(255,255,255,0.7); }
+  .follow .section-title {
+    color: var(--white);
+    margin-bottom: 20px;
+    font-size: clamp(36px, 5.5vw, 64px);
+  }
+
+  .follow-desc {
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.9;
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 2;
+  }
+
+  /* メインCTA（YouTube） */
+  .cta-hero {
+    position: relative;
+    max-width: 640px;
+    margin: 0 auto 24px;
+    padding: 36px 32px;
+    background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+    border-radius: 16px;
+    text-decoration: none;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    box-shadow: 0 20px 60px rgba(255,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+  }
+
+  .cta-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.15) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  .cta-hero:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 28px 70px rgba(255,0,0,0.4);
+  }
+
+  .cta-hero .play-icon {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cta-hero .play-icon svg {
+    width: 28px;
+    height: 28px;
+    fill: var(--white);
+    margin-left: 4px;
+  }
+
+  .cta-hero-text {
+    text-align: left;
+    flex: 1;
+  }
+
+  .cta-hero-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    opacity: 0.85;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+
+  .cta-hero-title {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-bottom: 4px;
+  }
+
+  .cta-hero-sub {
+    font-size: 13px;
+    opacity: 0.9;
+    font-weight: 300;
+  }
+
+  .cta-hero-arrow {
+    flex-shrink: 0;
+    font-size: 24px;
+    transition: transform 0.3s;
+  }
+
+  .cta-hero:hover .cta-hero-arrow { transform: translateX(6px); }
+
+  /* SNSサブ導線 */
+  .sns-sub-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 0.2em;
+    margin: 40px 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    position: relative;
+  }
+
+  .sns-sub-label::before,
+  .sns-sub-label::after {
+    content: '';
+    width: 40px;
+    height: 1px;
+    background: rgba(255,255,255,0.3);
+  }
+
+  .sns-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    max-width: 560px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .sns-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 12px;
+    padding: 28px 16px;
+    text-decoration: none;
+    color: var(--white);
+    transition: transform 0.3s, background 0.3s, border-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .sns-card:hover {
+    transform: translateY(-6px);
+    background: rgba(255,255,255,0.12);
+    border-color: rgba(255,255,255,0.3);
+  }
+
+  .sns-icon-wrap {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+  }
+
+  .sns-icon-wrap svg { width: 28px; height: 28px; fill: var(--white); }
+
+  .sns-name {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 2px;
+  }
+
+  .sns-handle {
+    font-size: 11px;
+    font-weight: 300;
+    opacity: 0.7;
+    letter-spacing: 0.05em;
+  }
+
+  /* お問い合わせセクション */
+  .contact {
+    background: var(--paper);
+    padding: 140px 8%;
+  }
+
+  .contact-inner {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .contact-header {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+
+  .contact-desc {
+    font-size: 15px;
+    line-height: 2;
+    color: var(--ink-soft);
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .form-row label {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--sea);
+    letter-spacing: 0.15em;
+  }
+
+  .form-row label .required {
+    color: #d14520;
+    margin-left: 4px;
+    font-style: normal;
+  }
+
+  .form-row input,
+  .form-row textarea {
+    width: 100%;
+    padding: 14px 18px;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 15px;
+    color: var(--ink);
+    background: var(--white);
+    border: 1px solid rgba(26,40,56,0.12);
+    border-radius: 8px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+  }
+
+  .form-row input:focus,
+  .form-row textarea:focus {
+    border-color: var(--sea);
+    box-shadow: 0 0 0 3px rgba(74,143,168,0.1);
+  }
+
+  .form-row textarea {
+    min-height: 140px;
+    resize: vertical;
+    line-height: 1.8;
+  }
+
+  .form-submit {
+    margin-top: 8px;
+    padding: 18px 32px;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: var(--white);
+    background: var(--ink);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+  }
+
+  .form-submit:hover {
+    background: var(--sea-deep);
+    transform: translateY(-1px);
+  }
+
+  .form-submit:active { transform: translateY(0); }
+
+  /* ハニーポット（スパム対策で非表示） */
+  .honeypot {
+    position: absolute;
+    left: -9999px;
+  }
+
+  /* 送信完了メッセージ */
+  .form-success {
+    display: none;
+    text-align: center;
+    padding: 48px 24px;
+    background: var(--white);
+    border-radius: 12px;
+    border: 1px solid rgba(74,143,168,0.2);
+  }
+
+  .form-success.visible { display: block; }
+
+  .form-success-icon {
+    font-size: 40px;
+    color: var(--sea);
+    margin-bottom: 16px;
+  }
+
+  .form-success-title {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: var(--ink);
+  }
+
+  .form-success-desc {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.8;
+  }
+
+  /* フッター */
+  footer {
+    background: var(--ink);
+    color: rgba(255,255,255,0.7);
+    padding: 60px 8% 40px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    color: var(--white);
+    margin-bottom: 12px;
+  }
+
+  .footer-tag {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 32px;
+    opacity: 0.7;
+  }
+
+  .footer-sns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 32px;
+  }
+
+  .footer-sns a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.3s;
+  }
+
+  .footer-sns a:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+  }
+
+  .footer-sns svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--white);
+    opacity: 0.9;
+  }
+
+  .footer-copy {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    opacity: 0.5;
+  }
+
+  /* スクロールアニメーション */
+  .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* レスポンシブ */
+  @media (max-width: 880px) {
+    .nav { padding: 14px 20px; }
+    .nav-links { gap: 8px; }
+    .nav-links li:not(:last-child) { display: none; }
+    .nav-youtube { padding: 8px 14px; }
+
+    section { padding: 80px 6%; }
+    .gallery { padding: 100px 4%; }
+
+    .hero-img {
+      object-position: 22% 35%;
+    }
+    .hero-content {
+      justify-content: flex-end;
+      align-items: flex-start;
+      text-align: left;
+      padding: 0 6%;
+      padding-top: 0;
+      padding-bottom: 12%;
+    }
+    .hero-yt-pill { font-size: 12px; padding: 9px 18px 9px 12px; }
+
+    .intro-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .intro-caption {
+      position: static;
+      margin-top: 16px;
+      display: block;
+      text-align: right;
+    }
+
+    .gallery-grid {
+      grid-template-columns: repeat(6, 1fr);
+      grid-auto-rows: 100px;
+    }
+    .g1 { grid-column: span 6; grid-row: span 4; }
+    .g2 { grid-column: span 3; grid-row: span 3; }
+    .g3 { grid-column: span 3; grid-row: span 3; }
+    .g4 { grid-column: span 6; grid-row: span 3; }
+    .g5 { grid-column: span 3; grid-row: span 4; }
+    .g6 { grid-column: span 3; grid-row: span 4; }
+    .g7 { grid-column: span 6; grid-row: span 3; }
+    .g8 { grid-column: span 6; grid-row: span 3; }
+    .g9 { grid-column: span 3; grid-row: span 5; }
+    .g10 { grid-column: span 3; grid-row: span 5; }
+    .g11 { grid-column: span 6; grid-row: span 4; }
+
+    .sns-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .sns-card {
+      padding: 20px 8px;
+    }
+
+    .cta-hero {
+      flex-direction: column;
+      text-align: center;
+      gap: 16px;
+      padding: 32px 24px;
+    }
+
+    .cta-hero-text { text-align: center; }
+    .cta-hero-arrow { display: none; }
+
+    .contact { padding: 100px 6%; }
+    .contact-header { margin-bottom: 40px; }
+    .contact-desc br { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ナビゲーション -->
+<nav class="nav" id="nav">
+  <div class="nav-logo">NOMA</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#follow">Follow</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li>
+      <a href="https://youtube.com/@湘南パピヨンのノマ" target="_blank" rel="noopener" class="nav-youtube">
+        <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        登録
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ヒーロー -->
+<section class="hero">
+  <img src="images/hero-shonan.jpg" alt="湘南の海を背に佇むノマ" class="hero-img">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Papillon in Shonan</div>
+    <h1 class="hero-title">
+      <span class="small">湘南パピヨン</span>
+      ノマの日々
+    </h1>
+    <p class="hero-desc">ビビりなのに、冒険家。<br>湘南で暮らす小さなパピヨンの日々。</p>
+    <a href="https://youtube.com/@湘南パピヨンのノマ" target="_blank" rel="noopener" class="hero-yt-pill">
+      <span class="yt-icon">
+        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      </span>
+      <span>YouTubeで毎日の様子を配信中</span>
+      <span class="arrow">→</span>
+    </a>
+  </div>
+  <div class="hero-scroll">scroll</div>
+</section>
+
+<!-- イントロ -->
+<section class="intro" id="about">
+  <div class="intro-grid">
+    <div class="intro-text reveal">
+      <div class="section-label">About</div>
+      <h2 class="section-title">ビビりで、<br>家族想いの冒険家。</h2>
+      <p>ノマは、湘南で暮らす1歳のパピヨン。パパとママと3人家族です。</p>
+      <p>うちに来た日、4時間クレートから出てこなかった筋金入りのビビり。でも、心を許した家族には一途で、驚くほどの甘えん坊。</p>
+      <p>得意技は階段登りと「タッチ」のトリック。苦手はお風呂と、お友達犬とのワンプロ。小さな体で、時々大きな世界へ繰り出します。</p>
+      <p>日本最西端・長崎の神崎鼻まで冒険したこともある、ビビりな冒険家。それがノマです。</p>
+      <dl class="intro-meta">
+        <dt>Name</dt><dd>ノマ / Noma</dd>
+        <dt>Breed</dt><dd>パピヨン (男の子・1歳)</dd>
+        <dt>Home</dt><dd>湘南・神奈川</dd>
+        <dt>Family</dt><dd>パパ・ママと3人暮らし</dd>
+        <dt>Loves</dt><dd>海、砂浜、家族、魚</dd>
+        <dt>Skills</dt><dd>階段登り、タッチのトリック</dd>
+      </dl>
+    </div>
+    <div class="intro-img-wrap reveal">
+      <img src="images/09-wind.jpeg" alt="湘南の風とノマ">
+      <div class="intro-caption">— a little adventurer</div>
+    </div>
+  </div>
+</section>
+
+<!-- ギャラリー -->
+<section class="gallery" id="gallery">
+  <div class="gallery-header reveal">
+    <div class="section-label">Gallery</div>
+    <h2 class="section-title">Moments with Noma</h2>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item g1 reveal" data-caption="looking up">
+      <img src="images/02-grass.jpeg" alt="芝生のノマ">
+    </div>
+    <div class="gallery-item g2 reveal" data-caption="spring tulips">
+      <img src="images/01-tulips.jpeg" alt="チューリップとノマ">
+    </div>
+    <div class="gallery-item g3 reveal" data-caption="canola field">
+      <img src="images/05-canola.jpeg" alt="菜の花畑のノマ">
+    </div>
+    <div class="gallery-item g4 reveal" data-caption="golden hour">
+      <img src="images/08-sunset-beach.jpeg" alt="夕暮れのビーチとノマ">
+    </div>
+    <div class="gallery-item g5 reveal" data-caption="sweet dreams">
+      <img src="images/07-sleeping.jpeg" alt="眠るノマ">
+    </div>
+    <div class="gallery-item g6 reveal" data-caption="Tsurigasaki sunrise">
+      <img src="images/06-sunset-surf.jpeg" alt="釣ヶ崎の朝日とノマ">
+    </div>
+    <div class="gallery-item g7 reveal" data-caption="facing the sea">
+      <img src="images/04-enoshima.jpeg" alt="江ノ島を見つめるノマ">
+    </div>
+    <div class="gallery-item g8 reveal" data-caption="a proud moment">
+      <img src="images/03-certificate.jpeg" alt="最西端到達証明書とノマ">
+    </div>
+    <div class="gallery-item g9 reveal" data-caption="autumn leaves">
+      <img src="images/12-autumn.jpeg" alt="紅葉とノマ">
+    </div>
+    <div class="gallery-item g10 reveal" data-caption="standing tall">
+      <img src="images/11-sofa-stand.jpeg" alt="ソファに立つノマ">
+    </div>
+    <div class="gallery-item g11 reveal" data-caption="sunset on grass">
+      <img src="images/10-sunset-portrait.jpeg" alt="夕焼けの草原とノマ">
+    </div>
+  </div>
+</section>
+
+<!-- クオート -->
+<section class="quote">
+  <div class="quote-mark reveal">&ldquo;</div>
+  <p class="quote-text reveal">海と、風と、ノマと。<br>ここにある、小さなしあわせ。</p>
+  <div class="quote-author reveal">— NOMA DIARY</div>
+</section>
+
+<!-- フォロー -->
+<section class="follow" id="follow">
+  <div class="follow-header reveal">
+    <div class="section-label">Follow</div>
+    <h2 class="section-title">ノマの毎日を、<br>見逃さないで。</h2>
+    <p class="follow-desc">海辺の散歩、ちょっとした冒険、寝顔まで。<br>ノマの日々は、すべてSNSで発信しています。</p>
+  </div>
+
+  <!-- メインCTA: YouTube -->
+  <a href="https://youtube.com/@湘南パピヨンのノマ" target="_blank" rel="noopener" class="cta-hero reveal">
+    <div class="play-icon">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+    </div>
+    <div class="cta-hero-text">
+      <div class="cta-hero-label">YouTube</div>
+      <div class="cta-hero-title">チャンネル登録する</div>
+      <div class="cta-hero-sub">湘南の日々を動画でお届けしています</div>
+    </div>
+    <div class="cta-hero-arrow">→</div>
+  </a>
+
+  <!-- サブ導線 -->
+  <div class="sns-sub-label reveal">or follow on</div>
+
+  <div class="sns-grid reveal">
+    <a href="https://www.instagram.com/noma_shonan/" target="_blank" rel="noopener" class="sns-card">
+      <div class="sns-icon-wrap">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+      </div>
+      <div class="sns-name">Instagram</div>
+      <div class="sns-handle">@noma_shonan</div>
+    </a>
+
+    <a href="https://x.com/noma_shonan" target="_blank" rel="noopener" class="sns-card">
+      <div class="sns-icon-wrap">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </div>
+      <div class="sns-name">X (Twitter)</div>
+      <div class="sns-handle">@noma_shonan</div>
+    </a>
+  </div>
+</section>
+
+<!-- お問い合わせ -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="contact-header reveal">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">お問い合わせ</h2>
+      <p class="contact-desc">ご質問・ご依頼など、お気軽にお問い合わせください。<br>企業様からのコラボレーションや撮影のご相談もこちらから。</p>
+    </div>
+
+    <form class="contact-form reveal" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSubmit(event)">
+      <input type="hidden" name="form-name" value="contact">
+      <p class="honeypot">
+        <label>このフィールドは空欄にしてください: <input name="bot-field"></label>
+      </p>
+
+      <div class="form-row">
+        <label for="name">お名前<span class="required">*</span></label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-row">
+        <label for="email">メールアドレス<span class="required">*</span></label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-row">
+        <label for="subject">件名<span class="required">*</span></label>
+        <input type="text" id="subject" name="subject" required placeholder="例: ペットフード商品PRのご相談">
+      </div>
+
+      <div class="form-row">
+        <label for="message">メッセージ<span class="required">*</span></label>
+        <textarea id="message" name="message" required placeholder="会社名・ご依頼内容・希望時期などをご記入ください"></textarea>
+      </div>
+
+      <button type="submit" class="form-submit">送信する</button>
+    </form>
+
+    <div class="form-success" id="form-success">
+      <div class="form-success-icon">✓</div>
+      <div class="form-success-title">お問い合わせありがとうございます</div>
+      <div class="form-success-desc">内容を確認のうえ、数日以内にご返信いたします。<br>しばらくお待ちください。</div>
+    </div>
+  </div>
+</section>
+
+<!-- フッター -->
+<footer>
+  <div class="footer-logo">NOMA</div>
+  <div class="footer-tag">A little adventurer in Shonan</div>
+  <div class="footer-sns">
+    <a href="https://youtube.com/@湘南パピヨンのノマ" target="_blank" rel="noopener" aria-label="YouTube">
+      <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/noma_shonan/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+    </a>
+    <a href="https://x.com/noma_shonan" target="_blank" rel="noopener" aria-label="X">
+      <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+    </a>
+    <a href="https://www.threads.net/@noma_shonan" target="_blank" rel="noopener" aria-label="Threads">
+      <svg viewBox="0 0 24 24"><path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.75-1.757-.513-.586-1.308-.883-2.359-.89h-.029c-.844 0-1.992.232-2.721 1.32L7.734 7.847c.98-1.454 2.568-2.256 4.478-2.256h.044c3.194.02 5.097 1.975 5.287 5.388.108.046.216.094.321.142 1.49.7 2.58 1.761 3.154 3.07.797 1.82.871 4.79-1.548 7.158-1.85 1.81-4.094 2.628-7.277 2.65Zm1.003-11.69c-.242 0-.487.007-.739.021-1.836.103-2.98.946-2.916 2.143.067 1.256 1.452 1.839 2.784 1.767 1.224-.065 2.818-.543 3.086-3.71a10.5 10.5 0 0 0-2.215-.221z"/></svg>
+    </a>
+  </div>
+  <div class="footer-copy">© 2025 NOMA DIARY · SHONAN, KANAGAWA, JAPAN</div>
+</footer>
+
+<script>
+  // ナビのスクロール時背景切り替え
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 80) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+
+  // リビールアニメーション
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // フォーム送信処理
+  function handleSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+
+    fetch('/', {
+      method: 'POST',
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(data).toString()
+    })
+      .then(() => {
+        form.style.display = 'none';
+        document.getElementById('form-success').classList.add('visible');
+        document.getElementById('form-success').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      })
+      .catch((error) => {
+        alert('送信に失敗しました。時間をおいて再度お試しください。');
+        console.error(error);
+      });
+  }
+</script>
+
+</body>
+</html>
