@@ -1,0 +1,97 @@
+/* ヘッダーやフッター、全ページで共通となる設定 */
+
+/* Navigation */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  z-index: 1000;
+  transition: var(--transition);
+}
+
+.nav.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 15px 50px;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+}
+
+.nav-logo {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+.nav.scrolled .nav-logo {
+  color: var(--primary-color);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+
+.nav.scrolled .nav-links a {
+  color: var(--text-color);
+}
+
+.nav-youtube {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #ff0000;
+  color: #fff !important;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.nav-youtube svg {
+  width: 18px;
+  fill: currentColor;
+}
+
+/* Footer */
+footer {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.footer-logo {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.footer-sns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.footer-sns svg {
+  width: 24px;
+  fill: #999;
+}
+
+.footer-copy {
+  font-size: 0.75rem;
+  color: #999;
+  letter-spacing: 0.1em;
+}

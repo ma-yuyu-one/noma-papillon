@@ -1,0 +1,58 @@
+/* サイトの土台となるcss */
+
+:root {
+  --primary-color: #0e3a55;
+  --accent-color: #d4a373;
+  --text-color: #333333;
+  --bg-color: #ffffff;
+  --section-bg: #f9f9f9;
+  --font-serif: 'Shippori Mincho', serif;
+  --font-en: 'Cormorant Garamond', serif;
+  --font-sans: 'Zen Kaku Gothic New', sans-serif;
+  --transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text-color);
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* 共通のアニメーション用クラス */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: var(--transition);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
